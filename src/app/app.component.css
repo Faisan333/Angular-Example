@@ -1,0 +1,26 @@
+table {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+}
+
+tr,
+th,
+td {
+    border: 2px solid black;
+}
+
+.pass {
+    color: white;
+    background-color: green;
+}
+
+.fail {
+    color: white;
+    background-color: red;
+}
+
+.cls {
+    color: white;
+    background-color: red;
+}

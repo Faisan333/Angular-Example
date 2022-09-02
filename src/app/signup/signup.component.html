@@ -1,0 +1,56 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">First</th>
+            <th scope="col">Email</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Phone</th>
+            <!-- <th scope="col">DOB</th> -->
+
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of studentData">
+            <th scope="row">{{student.id}}</th>
+            <td>{{student.name}}</td>
+            <td>{{student.email}}</td>
+            <!-- <td>{{student['dob']|date:'shortDate'}}</td> -->
+            <td>{{student.gender}}</td>
+            <td>{{student.phone}}</td>
+        </tr>
+
+    </tbody>
+</table>
+
+
+<form #form="ngForm" (ngSubmit)="stData(form)">
+    <div class="form-group">
+        <label for="exampleInputEmail1">id</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="id" ngModel>
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Name</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name" ngModel>
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" ngModel>
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Gender</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="gender" ngModel>
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Phone</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="phone" ngModel>
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

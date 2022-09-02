@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "id": "101",
+      "name": "Faisan",
+      "email": "abc@gmail.com",
+      "gender": "Male",
+      "phone": "101888"
+    },
+    {
+      "id": "101",
+      "name": "Faisan",
+      "email": "abc@gmail.com",
+      "gender": "Male",
+      "phone": "101888"
+    },
+    {
+      "id": "hi",
+      "name": "nn",
+      "email": "bb",
+      "gender": "ccc",
+      "phone": "gg"
+    },
+    {
+      "id": "hhdh",
+      "name": "ss",
+      "email": "dd",
+      "gender": "aa",
+      "phone": "dd"
+    },
+    {
+      "id": "ff",
+      "name": "ss",
+      "email": "dd",
+      "gender": "aa",
+      "phone": "dd"
+    }
+  ]
+}

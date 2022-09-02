@@ -1,0 +1,78 @@
+<!-- <form #form1="ngForm" (ngSubmit)="submit(form1)">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" #email="ngModel" ngModel required>
+        <span *ngIf="form1.touched && email.errors?.['required']">Please Enter Email</span>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" name="pass" #pass="ngModel" ngModel required>
+        <div>
+            <span *ngIf="form1.submitted && pass.errors?.['required']">Please Enter Password</span>
+            <span *ngIf=""></span>
+        </div>
+
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="form1.invalid">Submit</button>
+</form> -->
+
+<!-- <form #form1="ngForm" (ngSubmit)="submit(form1)">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" #u_email="ngModel" [(ngModel)]="email" required>
+        <span *ngIf="form1.touched && u_email.errors?.['required']">Please Enter Email</span>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" name="pass" #u_pass="ngModel" [(ngModel)]="email" required>
+        <div>
+            <span *ngIf="form1.submitted && u_pass.errors?.['required']">Please Enter Password</span>
+            <span *ngIf=""></span>
+        </div>
+
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="form1.invalid">Submit</button>
+    <hr> {{form1.value}}
+</form> -->
+
+
+<!-- Reactive Forms -->
+
+
+<!-- <form [formGroup]="userform" (ngSubmit)="submit()">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="emai" required>
+        <span *ngIf="Uemail!.errors?.['required']">please enter email</span>
+        <span *ngIf=" !isFormValid && Uemail!.errors?.['minlength']">minimum 2 characters</span>
+    </div>
+    <div class=" form-group ">
+        <label for="exampleInputPassword1 ">Password</label>
+        <input type="password " class="form-control " id="exampleInputPassword1 " formControlName="passw" required>
+        <span *ngIf="Upass?.errors?.['containSpace'] && Upass?.touched">Space Detected</span>
+
+    </div>
+    <button type="submit " class="btn btn-primary ">Submit</button>
+</form> -->
+
+
+<!-- Validation Submit -->
+
+<form [formGroup]="userform" (ngSubmit)="loginad()">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="emai" required>
+        <span *ngIf="Uemail!.errors?.['required']">please enter email</span>
+        <span *ngIf=" !isFormValid && Uemail!.errors?.['minlength']">minimum 2 characters</span>
+    </div>
+    <div class=" form-group ">
+        <label for="exampleInputPassword1 ">Password</label>
+        <input type="password " class="form-control " id="exampleInputPassword1 " formControlName="passw" required>
+        <span *ngIf="Upass?.errors?.['containSpace'] && Upass?.touched">Space Detected</span>
+
+    </div>
+    <button type="submit " class="btn btn-primary ">Submit</button>
+    <span *ngIf="forms?.errors?.['invalidLogin']">
+        Administration Prohibited
+    </span>
+</form>

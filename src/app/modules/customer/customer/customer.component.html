@@ -1,0 +1,9 @@
+<p>customer works!</p>
+<button (click)="incrementData()">Click</button> <br> {{parentData}}
+
+
+<hr>
+
+
+<app-buyer [data]="user" [parentInc]=parentData (childData)="sendData($event)" (inData)="incrementchildData($event)"></app-buyer>
+<hr>{{cdata}}
