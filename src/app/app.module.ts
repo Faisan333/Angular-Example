@@ -20,6 +20,7 @@ import { LoginGuard } from './guards/login.guard';
 import { LoginService } from './service/login.service';
 import{HttpClientModule} from '@angular/common/http';
 import { StudentService } from './service/student.service';
+import { ObserableComponent } from './obserable/obserable.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { StudentService } from './service/student.service';
     LoginComponent,
     CoursedetailComponent,
     SortPipe,
-    sortNumber
+    sortNumber,
+    ObserableComponent
   ],
   imports: [
     BrowserModule,
