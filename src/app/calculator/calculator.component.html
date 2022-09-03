@@ -1,4 +1,70 @@
-<p><input type="text" id="username" name="username" [(ngModel)]="username"></p>
+<p><input type="text" id="username" name="username" [value]="'ggdd'"></p>
 <h1> {{username}}</h1>
 
 <button type="button" (click)="clickme()">Clickme</button>
+
+<div class="cont1">
+    <div class="row">
+        <div class="col-12 text-center mt-0">
+            <h4 style="font-family: 'Aclonica';font-size: 20px;"> PayEATS
+            </h4>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="cols-12 ml-3 mt-1">
+            <input type="text " name="" id="ans" value="" readonly [(ngModel)]="username"></div>
+    </div>
+    <div class="row ">
+        <div class="col-3">
+            <div class="dot3" id="onoff1"></div>
+        </div>
+        <div class="col-3">
+            <div class="dot1" id="onoff2"></div>
+        </div>
+        <div class="col-3">
+            <div class="dot2" id="onoff3"></div>
+        </div>
+        <div class="col-3">
+            <div class="dot4" id="onoff4"></div>
+        </div>
+
+
+    </div>
+    <div class="cont2">
+        <div class="row">
+            <div class="col-6">
+                <div class="square"><input type="text" value="" id="wel" readonly></div>
+            </div>
+            <!-- <div class="col-3"><input type="button" value="ON" id="on" onclick="on()"></div> -->
+            <!-- <div class="col-3"><input type="button" value="OFF" id="off" onclick="off()"></div> -->
+
+        </div>
+        <div class="row mt-3">
+            <div class="col-3"><input class="disb" type="button" value="7" id="seven" onclick="dis(7)"></div>
+            <div class="col-3"><input class="disb" type="button" value="8" id="eight" onclick="dis(8)"></div>
+            <div class="col-3"><input class="disb" type="button" value="9" id="nine" onclick="dis(9)"></div>
+            <div class="col-3"><input class="disb" type="button" value="x" id="multi" onclick="oper('*')"></div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-3"><input class="disb" type="button" value="4" id="four" onclick="dis(4)"></div>
+            <div class="col-3"><input class="disb" type="button" value="5" id="five" onclick="dis(5)"></div>
+            <div class="col-3"><input class="disb" type="button" value="6" id="six" onclick="dis(6)"></div>
+            <div class="col-3"><input class="disb" type="button" value="÷" id="divi" onclick="oper('/')"></div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-3"><input class="disb" type="button" value="1" id="one" onclick="dis(1)"></div>
+            <div class="col-3"><input class="disb" type="button" value="2" id="two" onclick="dis(2)"></div>
+            <div class="col-3"><input class="disb" type="button" value="3" id="three" onclick="dis(3)"></div>
+            <div class="col-3"><input class="disb" type="button" value="-" id="minus" onclick="oper('-')"></div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-3"><input class="disb" type="button" value="C" id="clear" onclick="clr()"></div>
+            <div class="col-3"><input class="disb" type="button" value="0" id="zero" onclick="dis(0)"></div>
+            <div class="col-3"><input class="disb" type="button" value="+" id="plus" onclick="oper('+')"></div>
+            <div class="col-3"><input class="disb" type="button" value="=" id="equal" onclick="equalto()"></div>
+        </div>
+    </div>
+
+</div>
