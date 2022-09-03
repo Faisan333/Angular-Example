@@ -21,6 +21,7 @@ import { LoginService } from './service/login.service';
 import{HttpClientModule} from '@angular/common/http';
 import { StudentService } from './service/student.service';
 import { ObserableComponent } from './obserable/obserable.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { ObserableComponent } from './obserable/obserable.component';
     CoursedetailComponent,
     SortPipe,
     sortNumber,
-    ObserableComponent
+    ObserableComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule,
